@@ -18,6 +18,7 @@ import SearchMenu from "./SearchMenu";
 import { useRef, useState } from "react";
 import AllMenu from "./AllMenu";
 import useClickOutside from "../../helpers/clickOutside";
+import UserMenu from "./userMenu";
 
 export default function Header() {
   const { user } = useSelector((user) => ({ ...user }));
@@ -46,7 +47,9 @@ export default function Header() {
           <input type="text" placeholder="Search Ease" className="hide_input" />
         </div>
       </div>
-      {showSearchMenu && <SearchMenu color={color} setShowSearchMenu={setShowSearchMenu} />}
+      {showSearchMenu && (
+        <SearchMenu color={color} setShowSearchMenu={setShowSearchMenu} />
+      )}
 
       <div className="header_middle">
         <Link to="/" className="middle_icon active">
@@ -90,6 +93,7 @@ export default function Header() {
         </div>
         <div className="circle_icon hover1">
           <ArrowDown />
+          <UserMenu user={user} />
         </div>
       </div>
     </header>
