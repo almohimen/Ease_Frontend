@@ -5,7 +5,7 @@ import HelpSupport from "./HelpSupport";
 import SettingsPrivacy from "./SettingsPrivacy";
 
 export default function UserMenu({ user }) {
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(0);
   return (
     <div className="menu">
       {visible === 0 && (
@@ -59,7 +59,12 @@ export default function UserMenu({ user }) {
               <i className="right_icon"></i>
             </div>
           </div>
-          <div className="menu_item hover3">
+          <div
+            className="menu_item hover3"
+            onClick={() => {
+              setVisible(3);
+            }}
+          >
             <div className="small_circle">
               <i className="dark_filled_icon"></i>
             </div>
