@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import {
   ArrowDown,
   Friends,
-  Gaming,
   HomeActive,
   Logo,
-  Market,
   Menu,
   Messenger,
   Notifications,
   Search,
-  Watch,
 } from "../../svg";
 import { useSelector } from "react-redux";
 import SearchMenu from "./SearchMenu";
@@ -62,16 +59,6 @@ export default function Header() {
         </Link>
         <Link to="/" className="middle_icon hover1">
           <Friends color={color} />
-        </Link>
-        <Link to="/" className="middle_icon hover1">
-          <Watch color={color} />
-          <div className="middle_notification">16+</div>
-        </Link>
-        <Link to="/" className="middle_icon hover1">
-          <Market color={color} />
-        </Link>
-        <Link to="/" className="middle_icon hover1">
-          <Gaming color={color} />
         </Link>
       </div>
       <div className="header_right">
