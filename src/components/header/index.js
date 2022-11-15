@@ -67,13 +67,19 @@ export default function Header() {
           <span>{user?.first_name}</span>
         </Link>
         <div
-          className="circle_icon hover1"
+          className={`circle_icon hover1 ${showAllMenu && "active_header"}`}
           ref={allmenu}
-          onClick={() => {
-            setShowAllMenu((prev) => !prev);
-          }}
         >
-          <Menu />
+          <div
+            onClick={() => {
+              setShowAllMenu((prev) => !prev);
+            }}
+          >
+            <div style={{ transform: "translateY(2px)" }}>
+              <Menu />
+            </div>
+          </div>
+
           {showAllMenu && <AllMenu />}
         </div>
         <div className="circle_icon hover1">
