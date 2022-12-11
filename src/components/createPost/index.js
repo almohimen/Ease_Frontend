@@ -1,4 +1,4 @@
-import { Feeling, LiveVideo, Photo } from "../../svg";
+// import { Feeling, LiveVideo, Photo } from "../../svg";
 // import UserMenu from "../header/userMenu";
 import "./style.css";
 export default function CreatePost({ user }) {
@@ -10,7 +10,7 @@ export default function CreatePost({ user }) {
           What's on your mind, {user?.first_name}
         </div>
       </div>
-      <div className="create_splitter"></div>
+      {/* <div className="create_splitter"></div>
       <div className="createPost_body">
         <div className="createPost_icon hover1">
           <LiveVideo color="#f3425f" />
@@ -24,7 +24,7 @@ export default function CreatePost({ user }) {
           <Feeling color="#f7b928" />
           Feeling/Activity
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
