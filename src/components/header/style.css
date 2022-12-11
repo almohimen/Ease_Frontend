@@ -146,8 +146,8 @@ header {
 }
 .right_notification {
   position: absolute;
-  top: -6px;
-  right: -5px;
+  top: 1px;
+  right: 17px;
   background: #e41e3f;
   border-radius: 50px;
   padding: 1px 6px;

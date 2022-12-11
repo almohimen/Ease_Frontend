@@ -21,9 +21,9 @@
 .open_post {
   background: var(--bg-forth);
   color: var(--color-secondary);
-  height: 41px;
+  height: 61px;
   flex: 1;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 17px;
   line-height: 21px;
   display: flex;

@@ -5,7 +5,7 @@ import {
   Friends,
   HomeActive,
   Logo,
-  Menu,
+  // Menu,
   Messenger,
   Notifications,
   Search,
@@ -13,7 +13,7 @@ import {
 import { useSelector } from "react-redux";
 import SearchMenu from "./SearchMenu";
 import { useRef, useState } from "react";
-import AllMenu from "./AllMenu";
+// import AllMenu from "./AllMenu";
 import useClickOutside from "../../helpers/clickOutside";
 import UserMenu from "./userMenu";
 
@@ -58,15 +58,23 @@ export default function Header() {
           <HomeActive />
         </Link>
         <Link to="/" className="middle_icon hover1">
+          <Messenger color={color} />
+        </Link>
+        <Link to="/" className="middle_icon hover1">
           <Friends color={color} />
         </Link>
+        <Link to="/" className="middle_icon hover1">
+          <Notifications  color={color} />
+          <div className="right_notification">5</div>
+        </Link>
+        
       </div>
       <div className="header_right">
         <Link to="/profile" className="profile_link hover1">
           <img src={user?.picture} alt="" />
           <span>{user?.first_name}</span>
         </Link>
-        <div
+        {/* <div
           className={`circle_icon hover1 ${showAllMenu && "active_header"}`}
           ref={allmenu}
         >
@@ -88,7 +96,7 @@ export default function Header() {
         <div className="circle_icon hover1">
           <Notifications />
           <div className="right_notification">5</div>
-        </div>
+        </div> */}
         <div className="circle_icon hover1" ref={usermenu}>
           <div
             onClick={() => {
