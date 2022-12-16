@@ -2,9 +2,7 @@
 import { useSelector } from "react-redux";
 import CreatePost from "../../components/createPost";
 import Header from "../../components/header";
-// import LeftHome from "../../components/home/left";
 import RightHome from "../../components/home/right";
-// import Stories from "../../components/home/stories";
 // import useClickOutside from "../../helpers/clickOutside";
 import './style.css'
 
@@ -17,7 +15,7 @@ export default function Home() {
       <RightHome user={user} />
       <div className="home_middle">
         {/* <Stories/> */}
-        <CreatePost/>
+        <CreatePost user={user}/>
       </div>
     </div>
   );
