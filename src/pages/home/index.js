@@ -11,10 +11,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      {/* <LeftHome user={user} /> */}
       <RightHome user={user} />
       <div className="home_middle">
-        {/* <Stories/> */}
         <CreatePost user={user}/>
       </div>
     </div>
